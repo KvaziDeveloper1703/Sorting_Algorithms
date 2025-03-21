@@ -1,5 +1,19 @@
 '''
+Counting Sort is a non-comparison-based sorting algorithm that works by counting the number of occurrences of each unique element. It is suitable only for integers within a limited range.
 
+How the algorithm works:
++ The minimum and maximum values in the array are found.
++ A helper array count is created to store the count of each unique number.
++ The count array is then transformed into a prefix sum array, which determines positions of elements in the output.
++ The sorted array is built in reverse to maintain stability.
+
+Сортировка подсчётом — это некомпаративный алгоритм сортировки, который работает за счёт подсчёта количества вхождений каждого уникального элемента. Подходит только для целых чисел в ограниченном диапазоне.
+
+Как работает алгоритм:
++ Находятся минимальное и максимальное значения массива.
++ Создаётся вспомогательный массив count для хранения количества каждого значения.
++ Затем count преобразуется в массив префиксных сумм — он определяет позиции элементов в итоговом массиве.
++ Построение отсортированного массива осуществляется с конца (для стабильности сортировки).
 '''
 
 def counting_sort(given_array):
