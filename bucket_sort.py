@@ -37,7 +37,7 @@ def bucket_sort(given_array):
     min_value = min(given_array)
     bucket_range = (max_value - min_value) / number_of_buckets + 1e-9
 
-    buckets = [[] for _ in range(num_buckets)]
+    buckets = [[] for _ in range(number_of_buckets)]
 
     for number in given_array:
         index = int((number - min_value) / bucket_range)
