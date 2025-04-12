@@ -25,7 +25,7 @@ def shell_sort(given_array):
             while j >= gap and given_array[j - gap] > temporary:
                 given_array[j] = given_array[j - gap]
                 j -= gap
-            given_array[j] = temp
+            given_array[j] = temporary
         gap //= 2
 
     return given_array
