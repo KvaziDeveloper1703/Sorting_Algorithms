@@ -2,16 +2,23 @@
 The Bubble Sort algorithm is a simple sorting technique that repeatedly steps through the list, compares adjacent elements, and swaps them if they are in the wrong order. This process is repeated until the list is completely sorted.
 
 In this implementation:
-+ The outer loop controls the number of passes through the array.
-+ The inner loop compares and swaps adjacent elements as needed.
-+ The swapped flag is used for optimization: if no swaps are made during a full pass, the algorithm stops early, as the array is already sorted.
+    - The outer loop controls the number of passes through the array;
+    - The inner loop compares and swaps adjacent elements as needed;
+    - The swapped flag is used for optimization: if no swaps are made during a full pass, the algorithm stops early, as the array is already sorted.
 
-Алгоритм сортировки пузырьком — это простой алгоритм сортировки, который многократно проходит по списку, сравнивая попарно соседние элементы и меняя их местами, если они стоят в неправильном порядке. Этот процесс продолжается до тех пор, пока список не будет полностью отсортирован.
+Алгоритм сортировки пузырьком - это простой алгоритм сортировки, который многократно проходит по списку, сравнивая попарно соседние элементы и меняя их местами, если они стоят в неправильном порядке. Этот процесс продолжается до тех пор, пока список не будет полностью отсортирован.
 
 В данной реализации:
-+ Внешний цикл отвечает за количество проходов по массиву.
-+ Внутренний цикл сравнивает пары элементов и меняет их местами, если требуется.
-+ Флаг swapped используется для оптимизации: если за один проход не произошло ни одной перестановки, алгоритм завершает работу раньше, так как массив уже отсортирован.
+    - Внешний цикл отвечает за количество проходов по массиву;
+    - Внутренний цикл сравнивает пары элементов и меняет их местами, если требуется;
+    - Флаг swapped используется для оптимизации: если за один проход не произошло ни одной перестановки, алгоритм завершает работу раньше, так как массив уже отсортирован.
+
+Kuplalajittelu (bubble sort) on yksinkertainen lajittelualgoritmi, joka käy listan läpi useita kertoja vertaamalla vierekkäisiä alkioita pareittain ja vaihtamalla ne keskenään, jos ne ovat väärässä järjestyksessä. Tätä prosessia jatketaan, kunnes lista on kokonaan lajiteltu.
+
+Tässä toteutuksessa:
+    - Ulompi silmukka vastaa taulukon läpikäyntikertojen määrästä;
+    - Sisempi silmukka vertailee alkioita pareittain ja vaihtaa ne tarvittaessa;
+    - Swapped-lippua käytetään optimointiin: jos yhden kierroksen aikana ei tapahdu yhtään vaihtoa, algoritmi lopettaa työnsä aikaisemmin, koska taulukko on jo lajiteltu.
 '''
 
 def bubble_sort(given_array):
