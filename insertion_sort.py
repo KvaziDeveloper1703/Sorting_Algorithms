@@ -2,18 +2,26 @@
 Insertion Sort is a simple and intuitive sorting algorithm that works by inserting each element into its correct position within the already sorted part of the array.
 
 In this implementation:
-+ The first element is considered sorted.
-+ For each iteration, the current element (key) is compared to the elements to its left.
-+ If those elements are greater than key, they are shifted one position to the right.
-+ Once the correct position is found, key is inserted there.
+    - The first element is considered sorted;
+    - For each iteration, the current element (key) is compared to the elements to its left;
+    - If those elements are greater than key, they are shifted one position to the right;
+    - Once the correct position is found, key is inserted there.
 
-Сортировка вставками — это простой и интуитивно понятный алгоритм сортировки, который работает по принципу вставки каждого элемента на нужное место в уже отсортированной части массива.
+Сортировка вставками - это простой и интуитивно понятный алгоритм сортировки, который работает по принципу вставки каждого элемента на нужное место в уже отсортированной части массива.
 
 В данной реализации:
-+ Считается, что первый элемент уже отсортирован.
-+ На каждой итерации текущий элемент (key) сравнивается с элементами слева от него.
-+ Если элементы слева больше key, они сдвигаются вправо.
-+ Когда находится нужное место, key вставляется на своё место.
+    - Считается, что первый элемент уже отсортирован;
+    - На каждой итерации текущий элемент (key) сравнивается с элементами слева от него;
+    - Если элементы слева больше key, они сдвигаются вправо;
+    - Когда находится нужное место, key вставляется на своё место.
+
+Lisäyslajittelu (insertion sort) on yksinkertainen ja intuitiivinen lajittelualgoritmi, joka toimii periaatteella, että jokainen alkio lisätään oikeaan paikkaansa jo valmiiksi lajitellussa taulukon osassa.
+
+Tässä toteutuksessa:
+    - Oletetaan, että ensimmäinen alkio on jo lajiteltu;
+    - Jokaisella iteraatiolla nykyistä alkiota (key) verrataan sen vasemmalla puolella oleviin alkioihin;
+    - Jos vasemmalla olevat alkiot ovat suurempia kuin key, niitä siirretään oikealle;
+    - Kun oikea paikka löytyy, key asetetaan omalle paikalleen.
 '''
 
 def insertion_sort(given_array):
