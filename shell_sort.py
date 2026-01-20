@@ -2,16 +2,23 @@
 Shell Sort is an optimized version of insertion sort that allows elements far apart from each other to be compared and moved. The algorithm uses a sequence of gaps, which gradually decreases to 1. In each step, insertion sort is performed on sublists formed by elements that are gap distance apart.
 
 How the algorithm works:
-+ The initial gap is set to half the length of the array.
-+ Perform insertion sort on elements at each gap distance.
-+ After each pass, reduce the gap by half until it reaches 0.
+    - The initial gap is set to half the length of the array;
+    - Perform insertion sort on elements at each gap distance;
+    - After each pass, reduce the gap by half until it reaches 0.
 
-Сортировка Шелла — это улучшенная версия сортировки вставками, которая позволяет сравнивать и перемещать элементы, находящиеся далеко друг от друга. Алгоритм использует последовательность промежутков, которая постепенно уменьшается до 1. На каждом шаге выполняется сортировка подсписков, состоящих из элементов, отстоящих друг от друга на текущий gap.
+Сортировка Шелла - это улучшенная версия сортировки вставками, которая позволяет сравнивать и перемещать элементы, находящиеся далеко друг от друга. Алгоритм использует последовательность промежутков, которая постепенно уменьшается до 1. На каждом шаге выполняется сортировка подсписков, состоящих из элементов, отстоящих друг от друга на текущий gap.
 
 Как работает алгоритм:
-+ Начальный шаг равен половине длины массива.
-+ Выполняется сортировка вставками для элементов, находящихся на расстоянии gap.
-+ После каждой итерации gap уменьшается вдвое, пока не достигнет 0.
+    - Начальный шаг равен половине длины массива;
+    - Выполняется сортировка вставками для элементов, находящихся на расстоянии gap;
+    - После каждой итерации gap уменьшается вдвое, пока не достигнет 0.
+
+Shell-lajittelu (Shell sort) on parannettu versio lisäyslajittelusta, joka mahdollistaa kaukana toisistaan olevien alkioiden vertailun ja siirtämisen. Algoritmi käyttää askelväliä (gap), joka pienenee vähitellen arvoon 1. Jokaisessa vaiheessa suoritetaan lisäyslajittelu alijonoille, joissa alkiot ovat toisistaan nykyisen gapin verran.
+
+Miten algoritmi toimii:
+    - Alkuväli on puolet taulukon pituudesta;
+    - Suoritetaan lisäyslajittelu alkioille, jotka ovat gap-etäisyydellä toisistaan;
+    - Jokaisen kierroksen jälkeen gap pienennetään puoleen, kunnes se saavuttaa arvon 0.
 '''
 
 def shell_sort(given_array):
