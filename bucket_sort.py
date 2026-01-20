@@ -2,20 +2,29 @@
 Bucket Sort is an efficient sorting algorithm for floating-point numbers that are uniformly distributed across a range. It divides the array into multiple subgroups, sorts each bucket individually (commonly with insertion sort), and then concatenates the results.
 
 How the algorithm works:
-+ Determine the minimum and maximum values of the array.
-+ The array is split into num_buckets buckets, each representing a specific range.
-+ Elements are distributed into buckets based on their value.
-+ Each bucket is sorted using insertion sort.
-+ All sorted buckets are concatenated into the final sorted array.
+    - Determine the minimum and maximum values of the array;
+    - The array is split into num_buckets buckets, each representing a specific range;
+    - Elements are distributed into buckets based on their value;
+    - Each bucket is sorted using insertion sort;
+    - All sorted buckets are concatenated into the final sorted array.
 
-Сортировка по корзинам — это эффективный алгоритм для сортировки вещественных чисел, равномерно распределённых по диапазону. Он делит массив на несколько подмножеств, сортирует каждую корзину отдельно (обычно сортировкой вставками) и затем объединяет результат.
+Сортировка по корзинам - это эффективный алгоритм для сортировки вещественных чисел, равномерно распределённых по диапазону. Он делит массив на несколько подмножеств, сортирует каждую корзину отдельно (обычно сортировкой вставками) и затем объединяет результат.
 
 Как работает алгоритм:
-+ Находятся минимальное и максимальное значения массива.
-+ Массив делится на num_buckets корзин, каждая из которых охватывает определённый диапазон значений.
-+ Элементы распределяются по корзинам на основе их значения.
-+ Каждая корзина сортируется с помощью сортировки вставками.
-+ Все отсортированные корзины объединяются в итоговый массив.
+    - Находятся минимальное и максимальное значения массива;
+    - Массив делится на num_buckets корзин, каждая из которых охватывает определённый диапазон значений;
+    - Элементы распределяются по корзинам на основе их значения;
+    - Каждая корзина сортируется с помощью сортировки вставками;
+    - Все отсортированные корзины объединяются в итоговый массив.
+
+Korilajittelu (bucket sort) on tehokas lajittelualgoritmi reaalilukujen lajitteluun, kun luvut ovat jakautuneet tasaisesti tietylle välille. Algoritmi jakaa taulukon useisiin alijoukkoihin (koreihin), lajittelee jokaisen korin erikseen (yleensä lisäyslajittelulla) ja yhdistää lopuksi tulokset.
+
+Miten algoritmi toimii:
+    - Etsitään taulukon pienin ja suurin arvo;
+    - Taulukko jaetaan num_buckets koriin, joista jokainen kattaa tietyn arvoalueen;
+    - Alkiot jaetaan koreihin niiden arvon perusteella;
+    - Jokainen kori lajitellaan lisäyslajittelulla;
+    - Kaikki lajitellut korit yhdistetään lopulliseksi taulukoksi.
 '''
 
 def insertion_sort(bucket):
