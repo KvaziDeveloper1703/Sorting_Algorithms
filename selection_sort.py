@@ -2,16 +2,23 @@
 The Selection Sort algorithm is a simple sorting method that divides the array into a sorted and an unsorted part. On each iteration, it finds the minimum element from the unsorted part and swaps it with the first unsorted element.
 
 In this implementation:
-+ The outer loop iterates over each element of the array.
-+ The inner loop finds the index of the smallest element in the remaining unsorted part.
-+ If the minimum element is different from the current one, they are swapped.
+    - The outer loop iterates over each element of the array;
+    - The inner loop finds the index of the smallest element in the remaining unsorted part;
+    - If the minimum element is different from the current one, they are swapped.
 
 Алгоритм сортировки выбором — это простой метод сортировки, при котором массив последовательно делится на отсортированную и неотсортированную части. На каждом шаге из неотсортированной части выбирается минимальный элемент, который затем обменивается местами с первым элементом неотсортированной части.
 
 В данной реализации:
-+ Внешний цикл проходит по каждому элементу массива.
-+ Внутренний цикл находит индекс минимального элемента в оставшейся части массива.
-+ Если минимальный элемент отличается от текущего, происходит обмен.
+    - Внешний цикл проходит по каждому элементу массива;
+    - Внутренний цикл находит индекс минимального элемента в оставшейся части массива;
+    - Если минимальный элемент отличается от текущего, происходит обмен.
+
+Valintalajittelu (selection sort) on yksinkertainen lajittelumenetelmä, jossa taulukko jaetaan vaiheittain lajiteltuun ja lajittelemattomaan osaan. Jokaisella askeleella lajittelemattomasta osasta valitaan pienin alkio, joka vaihdetaan lajittelemattoman osan ensimmäisen alkion kanssa.
+
+Tässä toteutuksessa:
+    - Ulompi silmukka käy läpi jokaisen taulukon alkion;
+    - Sisempi silmukka etsii pienimmän alkion indeksin taulukon jäljellä olevasta osasta;
+    - Jos pienin alkio on eri kuin nykyinen alkio, ne vaihdetaan keskenään.
 '''
 
 def selection_sort(given_array):
