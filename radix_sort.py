@@ -2,16 +2,23 @@
 Radix Sort is a non-comparison-based sorting algorithm that sorts numbers digit by digit, starting from the least significant digit (units place) and moving toward the most significant digit. For sorting by each digit, it uses Counting Sort, which is stable.
 
 How the algorithm works:
-+ The maximum value in the array is found to determine the number of digits.
-+ Sorting is done for each digit place (1, 10, 100, etc.) using the helper function counting_sort_by_digit.
-+ Each pass sorts the array based on the current digit, preserving the order of previous digits.
+    - The maximum value in the array is found to determine the number of digits;
+    - Sorting is done for each digit place using the helper function counting_sort_by_digit;
+    - Each pass sorts the array based on the current digit, preserving the order of previous digits.
 
-Поразрядная сортировка — это некомпаративный алгоритм сортировки, который сортирует числа поразрядно, начиная с младшего разряда (единиц) и переходя к старшему. Для сортировки по каждому разряду используется сортировка подсчётом, так как она стабильна.
+Поразрядная сортировка - это некомпаративный алгоритм сортировки, который сортирует числа поразрядно, начиная с младшего разряда (единиц) и переходя к старшему. Для сортировки по каждому разряду используется сортировка подсчётом, так как она стабильна.
 
 Как работает алгоритм:
-+ Определяется максимальное значение в массиве, чтобы узнать количество разрядов.
-+ Сортировка выполняется по каждой цифре (1, 10, 100 и т. д.), с использованием вспомогательной функции counting_sort_by_digit.
-+ Каждый проход упорядочивает массив по текущему разряду, сохраняя уже отсортированные предыдущие разряды.
+    - Определяется максимальное значение в массиве, чтобы узнать количество разрядов;
+    - Сортировка выполняется по каждой цифре, с использованием вспомогательной функции counting_sort_by_digit;
+    - Каждый проход упорядочивает массив по текущему разряду, сохраняя уже отсортированные предыдущие разряды.
+
+Radix-lajittelu (poimintalajittelu numeroittain) on ei-vertailuun perustuva lajittelualgoritmi, joka lajittelee luvut numero kerrallaan alkaen pienimmästä numeropaikasta (ykköset) ja siirtyen kohti suurinta. Jokaisen numeropaikan lajitteluun käytetään laskentalajittelua, koska se on stabiili.
+
+Miten algoritmi toimii:
+    - Määritetään taulukon suurin arvo, jotta saadaan selville numeroiden määrä;
+    - Lajittelu tehdään jokaisen numeron mukaan apufunktion counting_sort_by_digit avulla;
+    - Jokainen kierros järjestää taulukon nykyisen numeropaikan perusteella säilyttäen aiemmin lajitellut numeropaikat.
 '''
 
 def counting_sort_by_digit(given_array, digit_place):
