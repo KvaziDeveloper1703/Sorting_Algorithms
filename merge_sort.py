@@ -2,18 +2,26 @@
 Merge Sort is an efficient sorting algorithm based on the divide and conquer principle. It divides the array into two halves, recursively sorts each half, and then merges them back into a single sorted array.
 
 How the algorithm works:
-+ If the array length is 1 or less, it's already sorted.
-+ The array is split in half.
-+ Each half is recursively sorted using merge_sort.
-+ The sorted halves are combined using the merge function, which merges them into a sorted array.
+    - If the array length is 1 or less, it's already sorted;
+    - The array is split in half;
+    - Each half is recursively sorted using merge_sort;
+    - The sorted halves are combined using the merge function, which merges them into a sorted array.
 
-Сортировка слиянием — это эффективный алгоритм сортировки, основанный на принципе разделяй и властвуй. Он делит массив на две части, рекурсивно сортирует каждую из них, а затем сливает их в один отсортированный массив.
+Сортировка слиянием - это эффективный алгоритм сортировки, основанный на принципе разделяй и властвуй. Он делит массив на две части, рекурсивно сортирует каждую из них, а затем сливает их в один отсортированный массив.
 
 Как работает алгоритм:
-+ Если длина массива меньше или равна 1, он уже отсортирован.
-+ Массив делится пополам.
-+ Каждая половина сортируется рекурсивно с помощью merge_sort.
-+ Отсортированные половины объединяются функцией merge, которая сливает их в один отсортированный массив.
+    - Если длина массива меньше или равна 1, он уже отсортирован;
+    - Массив делится пополам;
+    - Каждая половина сортируется рекурсивно с помощью merge_sort;
+    - Отсортированные половины объединяются функцией merge, которая сливает их в один отсортированный массив.
+
+Lomituslajittelu (merge sort) on tehokas lajittelualgoritmi, joka perustuu “jako ja hallitse” -periaatteeseen. Se jakaa taulukon kahteen osaan, lajittelee kummankin osan rekursiivisesti ja lopuksi yhdistää ne yhdeksi lajitelluksi taulukoksi.
+
+Miten algoritmi toimii:
+    - Jos taulukon pituus on enintään 1, se on jo lajiteltu;
+    - Taulukko jaetaan puoliksi;
+    - Kumpikin puolisko lajitellaan rekursiivisesti merge_sort-funktion avulla;
+    - Lajitellut puoliskot yhdistetään merge-funktion avulla, joka lomittaa ne yhdeksi lajitelluksi taulukoksi.
 '''
 
 def merge_sort(given_array):
